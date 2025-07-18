@@ -151,8 +151,8 @@
     <p class="subtitle">請答題解鎖折扣碼按鈕</p>
 
     <div id="password-area">
-      <label for="pwd-input">密碼：</label>
-      <input id="pwd-input" type="password" placeholder="短影音下單抽全家禮券多少元?(填數字)" />
+      <label for="pwd-input">請輸入數字：</label>
+      <input id="pwd-input" type="password" placeholder="從版主短影音下單抽全家禮券多少元?" />
       <button class="submit-btn" onclick="checkPassword()">送出</button>
       <p id="error-msg" class="error-msg" style="display:none;">密碼錯誤，請重新輸入</p>
     </div>
@@ -178,7 +178,7 @@
     function checkPassword() {
       const input = document.getElementById('pwd-input').value.trim();
       const errorMsg = document.getElementById('error-msg');
-      if (input === '77777') {
+      if (input === '100') {
         document.getElementById('password-area').style.display = 'none';
         document.getElementById('discount-area').style.display = 'block';
         errorMsg.style.display = 'none';
