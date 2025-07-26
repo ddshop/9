@@ -152,7 +152,7 @@
 
     <div id="password-area">
       <label for="pwd-input">請輸入阿拉伯數字(例如:99)</label>
-      <input id="pwd-input" type="password" placeholder="從版主短影音下單抽全家禮券多少元?" />
+      <input id="pwd-input" type="password" placeholder="週三/週六綠標商品滿額多少免運?" />
       <button class="submit-btn" onclick="checkPassword()">送出</button>
       <p id="error-msg" class="error-msg" style="display:none;">密碼錯誤，請重新輸入</p>
     </div>
@@ -160,9 +160,10 @@
     <div id="discount-area" style="display:none;">
       <p class="section-title">🔥 全站100-20券（共60組）</p>
       <div class="discount-buttons">
-        <button onclick="copyCode('EK22XFYRK')">複製折扣碼</button>
-        <button onclick="copyCode('6ZV6TTJJ5')">複製折扣碼</button>
-        <button onclick="copyCode('G5DBU3JFR')">複製折扣碼</button>
+        <button onclick="copyCode('HWZFZA7TT')">複製折扣碼</button>
+        <button onclick="copyCode('NFEPT4YKW')">複製折扣碼</button>
+        <button onclick="copyCode('W8RNMKPW6
+')">複製折扣碼</button>
       </div>
     </div>
 
@@ -178,7 +179,7 @@
     function checkPassword() {
       const input = document.getElementById('pwd-input').value.trim();
       const errorMsg = document.getElementById('error-msg');
-      if (input === '100') {
+      if (input === '149') {
         document.getElementById('password-area').style.display = 'none';
         document.getElementById('discount-area').style.display = 'block';
         errorMsg.style.display = 'none';
