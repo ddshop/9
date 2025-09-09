@@ -2,205 +2,200 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>油飯DD省錢攻略_LINE社群專屬折扣碼</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>油飯DD省錢攻略_特選折扣碼</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: "Arial", sans-serif;
-      color: #fff;
-      background: url('https://ppt.cc/fWENsx@.jpg') no-repeat center center/cover;
-      filter: brightness(0.7);
+      color: #333;
+      background-color: #f8f8f8;
+      line-height: 1.6;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://ppt.cc/fWENsx@.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px);
+      z-index: -2;
+      background-repeat: no-repeat;
     }
     .overlay {
       position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.5);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
       z-index: -1;
     }
     .content {
-      max-width: 400px;
-      margin: 80px auto;
-      background: rgba(0,0,0,0.7);
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px #00ffcc;
+      padding: 20px 15px;
       text-align: center;
-      width: 90%;
+      max-width: 480px;
+      margin: 0 auto;
     }
     h1 {
-      font-size: 2.4em;
-      margin-bottom: 10px;
-      color: #00ffcc;
-      text-shadow: 3px 3px #ee4d2d, 2px 2px #000;
-      animation: flash 1.5s infinite alternate;
-    }
-    @keyframes flash {
-      from { opacity: 1; transform: scale(1); }
-      to { opacity: 0.95; transform: scale(1.05); }
+      color: #ee4d2d;
+      font-size: 2em;
+      margin-bottom: 12px;
+      text-shadow: 2px 2px #fff;
     }
     .subtitle {
-      font-size: 1.1em;
-      margin-bottom: 20px;
-      color: #FFDDC1;
-      text-shadow: 1px 1px #000;
+      font-size: 1em;
+      margin-bottom: 24px;
     }
-    label {
-      display: block;
-      font-size: 1.1em;
-      margin-bottom: 8px;
-      color: #00ffcc;
+    .code-section {
+      margin-bottom: 32px;
     }
-    input[type="password"] {
-      width: 100%;
-      padding: 14px;
-      border-radius: 8px;
-      border: none;
+    .code-section p {
+      color: red;
+      font-weight: bold;
+      margin-bottom: 12px;
       font-size: 1.1em;
-      margin-bottom: 15px;
     }
-    button.submit-btn, .discount-buttons button {
-      font-size: 1.2em;
-      width: 100%;
-      padding: 14px 0;
-      margin: 8px 0;
-      background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    button {
+      font-size: 1em;
+      padding: 10px 18px;
+      background-color: #ee4d2d;
       color: white;
       border: none;
-      border-radius: 50px;
+      border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 0 15px rgba(255, 94, 98, 0.8);
-      transition: transform 0.2s, box-shadow 0.2s;
+      min-width: 140px;
+      max-width: 180px;
+      flex: 1 1 140px;
+      transition: background-color 0.3s;
     }
-    button.submit-btn:hover, .discount-buttons button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
-    }
-    .error-msg {
-      color: #ff4444;
-      margin-bottom: 15px;
-      font-weight: bold;
+    button:hover {
+      background-color: #ff7755;
     }
     .section-title {
-      font-size: 1.5em;
+      margin-top: 32px;
+      margin-bottom: 12px;
       font-weight: bold;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      color: #ff66ff;
-      text-shadow: 2px 2px #000;
-    }
-    .discount-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .social-links {
-      margin-top: 30px;
+      color: #ee4d2d;
       font-size: 1.1em;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
     }
-    .social-links a {
-      display: block;
-      width: 100%;
-      max-width: 280px;
-      padding: 12px 20px;
-      border-radius: 30px;
-      box-shadow: 0 0 12px #00ffcc;
-      text-align: center;
-      color: #00ffcc;
-      font-weight: bold;
+    a {
+      color: #ee4d2d;
       text-decoration: none;
-      border: 2px dashed #fff;
-      background-color: rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s;
+      margin: 0 6px;
     }
-    .social-links a:hover {
-      transform: scale(1.1);
-      background-color: rgba(255, 255, 255, 0.2);
+    a:hover {
+      text-decoration: underline;
     }
-    @media(min-width: 600px) {
-      .discount-buttons {
-        flex-direction: row;
-        justify-content: center;
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 999;
+    }
+    .toast.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    @media (max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
       }
-      .discount-buttons button {
-        width: auto;
-        margin: 0 8px;
+      button {
+        width: 90%;
+        max-width: 320px;
+        min-width: auto;
+        flex: none;
       }
-      .social-links {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-      }
-      .social-links a {
-        width: auto;
+      .content {
+        padding: 15px 12px;
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
 
+  <div class="background"></div>
   <div class="overlay"></div>
 
   <div class="content">
-    <h1>🎉油飯DD</h1>
-     <h1>專屬折扣碼</h1>
-    <p class="subtitle">9.9購物節超好買!!!</p>
+    <h1>蝦皮特選00:00搶</h1>
+    <p class="subtitle">點擊按鈕自動複製折扣碼，貼上即可領券</p>
 
-    <div id="password-area">
-      <label for="pwd-input">請輸入「99」解鎖</label>
-      <input id="pwd-input" type="password" placeholder="99" />
-      <button class="submit-btn" onclick="checkPassword()">送出</button>
-      <p id="error-msg" class="error-msg" style="display:none;">密碼錯誤，請重新輸入</p>
-    </div>
-
-    <div id="discount-area" style="display:none;">
-      <p class="section-title">🔥全站100-20券（共40組）</p>
-      <div class="discount-buttons">
-        <button onclick="copyCode('ZBW7GJQT2')">複製折扣碼</button>
-        <button onclick="copyCode('Q82MGWJAT')">複製折扣碼</button>
+     <!-- 新!全站100-20券 -->
+    <section class="code-section">
+      <p>55折-300券</p>
+      <div class="button-group">
+        <button onclick="copyCode('DD99ATC')">複製折扣碼</button>
       </div>
-    </div>
+    </section>
 
-    <div class="social-links">
-      <p class="section-title">📢 看更多優惠：</p>
-      <a href="https://line.me/ti/g2/ARxvlA8qbIgJf6ut4bngnwDGnLWy3x62pbqiMw" target="_blank" rel="noopener noreferrer">LINE社群</a>
-      <a href="https://www.dcard.tw/@t5976" target="_blank" rel="noopener noreferrer">Dcard帳號</a>
-      <a href="https://www.instagram.com/dd_shopping_go/" target="_blank" rel="noopener noreferrer">Instagram帳號</a>
-    </div>
+     <!-- 全站100-20券 -->
+    <section class="code-section">
+      <p>75折-200券</p>
+      <div class="button-group">
+        <button onclick="copyCode('DD99ATC')">複製折扣碼</button>
+      </div>
+    </section>
+
+
+    
+
+    <p class="section-title">歡迎加入我的省錢社群：</p>
+    <p>
+      <a href="https://line.me/ti/g2/ARxvlA8qbIgJf6ut4bngnwDGnLWy3x62pbqiMw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener noreferrer">🔗 LINE社群</a>
+      <a href="https://www.dcard.tw/@t5976" target="_blank" rel="noopener noreferrer">🔗 Dcard帳號</a>
+      <a href="https://www.instagram.com/dd_shopping_go/" target="_blank" rel="noopener noreferrer">🔗 Instagram</a>
+    </p>
   </div>
 
+  <div class="toast" id="toast">折扣碼已複製！</div>
+
   <script>
-    function checkPassword() {
-      const input = document.getElementById('pwd-input').value.trim();
-      const errorMsg = document.getElementById('error-msg');
-      if (input === '99') {
-        document.getElementById('password-area').style.display = 'none';
-        document.getElementById('discount-area').style.display = 'block';
-        errorMsg.style.display = 'none';
-      } else {
-        errorMsg.style.display = 'block';
-      }
+    function copyCode(code) {
+      navigator.clipboard.writeText(code).then(() => {
+        showToast();
+        setTimeout(() => {
+          window.location.href = 'https://s.shopee.tw/2B5LfL7bua';
+        }, 1000); // 延長顯示 toast 時間
+      });
     }
 
-    function copyCode(code) {
-      const el = document.createElement('textarea');
-      el.value = code;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand('copy');
-      document.body.removeChild(el);
-      window.location.href = 'https://s.shopee.tw/20lvN0ivdt';
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 1200);
     }
   </script>
 
 </body>
 </html>
-
 
 
 
